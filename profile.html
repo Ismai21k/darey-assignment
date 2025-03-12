@@ -3,52 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Ismail Kabir, a web developer.">
-    <title>Ismail Kabir - Portfolio</title>
+    <meta name="description" content="Backend development course page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Backend Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Hero Section Styling */
+        #Hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Features Section Styling */
+        #features {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Table Styling for Features */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Button Styling for CTA */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Footer Styling */
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Responsive Design for Larger Screens */
+        @media (min-width: 600px) {
+            #Hero {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            footer {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 600px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+                background-color: #f4f4f4;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Objective: The objective of this project is to create a personal profile webpage using only HTML. -->
-    <!-- Requirements: Use only HTML (no CSS or JavaScript). Use semantic elements (<header>, <nav>, <section>, <footer>). Ensure the HTML structure is well-organized and readable. -->
-    <!-- Use Case: This personal profile page is intended to showcase my bio, hobbies, and contact details in a structured and semantic HTML format. -->
+    <!-- Objective: The objective of this project is to create a responsive web page for a backend development course, featuring a hero section, a features section, and a footer with contact details. -->
+    <!-- Requirements:
+        1. Create a Hero Section with a headline, subheadline, and a call-to-action button.
+        2. Build a Responsive Features Section that highlights key features in a structured manner.
+        3. Design a Footer Section with contact details and copyright information.
+        4. Use HTML and CSS for implementation.
+        5. Ensure responsive design using CSS Flexbox or Grid.
+        6. Implement proper semantic HTML structure for accessibility. -->
+    <!-- Use Case: This web page is intended to be used as a landing page for a backend development course. It will provide potential students with an overview of the course, key features, and contact information for enrollment. -->
 
-    <header>
-        <h1>My Profile</h1>
-        <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Hobbies</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Hero Section -->
+    <section id="Hero">
+        <h1>Backend Course</h1> <!-- Headline introducing the product/service -->
+        <h3>Learn Backend development with node.js, express and mangoDB</h3> <!-- Subheadline with description -->
+        <a href="#" class="btn">Learn More</a> <!-- Call-to-Action (CTA) Button -->
+    </section>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="IMG_4245.jpg" alt="Profile picture of Ismail Kabir" width="200" height="200">
-            <p>Hi, I am <strong>Ismail Kabir</strong>, a passionate web developer dedicated to building creative and functional websites.</p>
-        </section>
+    <!-- Features Section -->
+    <section id="features">
+        <table>
+            <tr>
+                <th><i class="fa fa-clock-o"></i> Duration</th> <!-- Feature with icon -->
+                <th><i class="fa fa-calendar"></i> Start Date</th> <!-- Feature with icon -->
+                <th><i class="fa fa-calendar-check-o"></i> End Date</th> <!-- Feature with icon -->
+            </tr>
+            <tr>
+                <td>6 weeks</td> <!-- Feature description -->
+                <td>12 March 2026</td> <!-- Feature description -->
+                <td>25 August 2026</td> <!-- Feature description -->
+            </tr>
+        </table>
+    </section>
 
-        <section id="hobbies">
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li>📖 Reading</li>
-                <li>✈️ Travelling</li>
-                <li>💻 Coding</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Details</h2>
-            <p><strong>Email:</strong> example@gmail.com</p>
-            <p><strong>Phone:</strong> +234 9012345678</p>
-            <p><strong>Address:</strong> 10 New Jos Road</p>
-        </section>
-    </main>
-
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Ismail Kabir | Web Developer</p>
+        <p><strong>Email:</strong> example1234@gmail.com</p> <!-- Contact details -->
+        <p><strong>Phone:</strong> +234 912345678</p> <!-- Contact details -->
+        <p><strong>Address:</strong> 10 New Jos Road</p> <!-- Contact details -->
+        <p>&copy; 2026 Ismail Kabir | Web Developer</p> <!-- Copyright information -->
     </footer>
 
 </body>
