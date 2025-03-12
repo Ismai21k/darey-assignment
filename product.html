@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="product page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #Hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        #features {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        @media (min-width: 600px) {
+            #Hero {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            footer {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        @media (max-width: 600px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+                background-color: #f4f4f4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="Hero">
+        <h1>Backend Course</h1>
+        <h3>Learn Backend development with node.js, express and mangoDB</h3>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <section id="features">
+        <table>
+            <tr>
+                <th><i class="fa fa-clock-o"></i> Duration</th>
+                <th><i class="fa fa-calendar"></i> Start Date</th>
+                <th><i class="fa fa-calendar-check-o"></i> End Date</th>
+            </tr>
+            <tr>
+                <td>6 weeks</td>
+                <td>12 March 2026</td>
+                <td>25 August 2026</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p><strong>Email:</strong> example1234@gmail.com</p>
+        <p><strong>Phone:</strong> +234 912345678</p>
+        <p><strong>Address:</strong> 10 New Jos Road</p>
+        <p>&copy; 2026 Ismail Kabir | Web Developer</p>
+    </footer>
+</body>
+</html>
