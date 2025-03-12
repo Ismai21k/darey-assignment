@@ -13,6 +13,7 @@
             box-sizing: border-box;
         }
 
+        /* Hero Section Styling */
         #Hero {
             display: flex;
             flex-direction: column;
@@ -22,11 +23,13 @@
             background-color: #f4f4f4;
         }
 
+        /* Features Section Styling */
         #features {
             padding: 20px;
             background-color: #fff;
         }
 
+        /* Table Styling for Features */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -42,6 +45,7 @@
             background-color: #f4f4f4;
         }
 
+        /* Button Styling for CTA */
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -52,6 +56,7 @@
             border-radius: 5px;
         }
 
+        /* Footer Styling */
         footer {
             display: flex;
             flex-direction: column;
@@ -61,6 +66,7 @@
             background-color: #f4f4f4;
         }
 
+        /* Responsive Design for Larger Screens */
         @media (min-width: 600px) {
             #Hero {
                 flex-direction: row;
@@ -73,6 +79,7 @@
             }
         }
 
+        /* Responsive Design for Smaller Screens */
         @media (max-width: 600px) {
             table, th, td {
                 display: block;
@@ -88,32 +95,35 @@
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
     <section id="Hero">
-        <h1>Backend Course</h1>
-        <h3>Learn Backend development with node.js, express and mangoDB</h3>
-        <a href="#" class="btn">Learn More</a>
+        <h1>Backend Course</h1> <!-- Headline introducing the product/service -->
+        <h3>Learn Backend development with node.js, express and mangoDB</h3> <!-- Subheadline with description -->
+        <a href="#" class="btn">Learn More</a> <!-- Call-to-Action (CTA) Button -->
     </section>
 
+    <!-- Features Section -->
     <section id="features">
         <table>
             <tr>
-                <th><i class="fa fa-clock-o"></i> Duration</th>
-                <th><i class="fa fa-calendar"></i> Start Date</th>
-                <th><i class="fa fa-calendar-check-o"></i> End Date</th>
+                <th><i class="fa fa-clock-o"></i> Duration</th> <!-- Feature with icon -->
+                <th><i class="fa fa-calendar"></i> Start Date</th> <!-- Feature with icon -->
+                <th><i class="fa fa-calendar-check-o"></i> End Date</th> <!-- Feature with icon -->
             </tr>
             <tr>
-                <td>6 weeks</td>
-                <td>12 March 2026</td>
-                <td>25 August 2026</td>
+                <td>6 weeks</td> <!-- Feature description -->
+                <td>12 March 2026</td> <!-- Feature description -->
+                <td>25 August 2026</td> <!-- Feature description -->
             </tr>
         </table>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p><strong>Email:</strong> example1234@gmail.com</p>
-        <p><strong>Phone:</strong> +234 912345678</p>
-        <p><strong>Address:</strong> 10 New Jos Road</p>
-        <p>&copy; 2026 Ismail Kabir | Web Developer</p>
+        <p><strong>Email:</strong> example1234@gmail.com</p> <!-- Contact details -->
+        <p><strong>Phone:</strong> +234 912345678</p> <!-- Contact details -->
+        <p><strong>Address:</strong> 10 New Jos Road</p> <!-- Contact details -->
+        <p>&copy; 2026 Ismail Kabir | Web Developer</p> <!-- Copyright information -->
     </footer>
 </body>
 </html>
