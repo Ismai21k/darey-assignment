@@ -53,10 +53,11 @@
 </head>
 <body>
 
-    <!-- Objective: The goal of this project is to build a Calculator App using HTML, CSS, and JavaScript. -->
-    <!-- Requirements: The application should allow users to perform basic arithmetic operations like addition, subtraction, multiplication, and division. -->
-    <!-- Use Case: This calculator app is intended for users to perform basic arithmetic operations easily. -->
-
+    <!--
+    Objective: The goal of this project is to build a Calculator App using HTML, CSS, and JavaScript.
+    Requirements: The application should allow users to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+    Use Case: This calculator app is intended for users to perform basic arithmetic operations easily.
+    -->
 
     <div class="calculator">
         <div class="display" id="display">0</div>
@@ -84,12 +85,17 @@
     </div>
 
     <script>
+        // Objective: The goal of this project is to build a Calculator App using HTML, CSS, and JavaScript.
+        // Requirements: The application should allow users to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+        // Use Case: This calculator app is intended for users to perform basic arithmetic operations easily.
+
         let display = document.getElementById('display');
         let currentInput = '';
         let previousInput = '';
         let operation = null;
         let shouldResetScreen = false;
 
+        // Function to append numbers to the display
         function appendNumber(number) {
             // Prevent multiple leading zeros
             if (currentInput === "0" && number === "0") return;
@@ -102,6 +108,7 @@
             display.textContent = currentInput;
         }
 
+        // Function to compute the result of the arithmetic operation
         function computeResult() {
             let result;
             const pre = parseFloat(previousInput);
@@ -139,6 +146,7 @@
             display.textContent = result;
         }
 
+        // Function to set the operation (addition, subtraction, multiplication, division)
         function setOperation(op) {
             if (currentInput === '') return;
             if (previousInput !== '') computeResult();
@@ -147,6 +155,7 @@
             shouldResetScreen = true;
         }
 
+        // Function to clear the display and reset all variables
         function clearDisplay() {
             currentInput = '0';
             previousInput = '';
